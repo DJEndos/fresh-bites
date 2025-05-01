@@ -13,13 +13,21 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top justify-content-space">
         <div class="container">
-            <a class="navbar-brand" href="#">FreshBites</a>
+            <a class="navbar-brand" href="/index.html">FreshBites</a>
+            <div class="d-flex mx-4" id="cart">
+                <button class="btn btn-outline-light  position-relative" id="cartButton">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartCount">0</span>
+                </button>
+            </div>
+         
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+          
+            <div class="collapse navbar-collapse float-right" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Home</a>
@@ -34,14 +42,10 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
-                <div class="d-flex">
-                    <button class="btn btn-outline-light position-relative" id="cartButton">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartCount">0</span>
-                    </button>
-                </div>
+                
             </div>
         </div>
+  
     </nav>
 
     <!-- Hero Section -->
